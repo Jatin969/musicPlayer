@@ -114,8 +114,8 @@ let track_list = [
     add: true,
   },
   {
-    name: "Downtown",
-    artist: "Guru Randhawa",
+    name: "Sun meri Shehzadi",
+    artist: "Salman Khan",
     image: "https://i.ytimg.com/vi/IOlYwy3aANo/maxresdefault.jpg",
     path: "http://pagalworldcom.com/siteuploads/files/sfd9/4243/Downtown%20-%20Guru%20Randhawa(PagalWorldCom.Com).mp3",
     add: true,
@@ -171,7 +171,21 @@ function addToFav(id, name) {
 }
 
 
-
+// document.querySelector(".songs").addEventListener("load",function(){
+//   let insert;
+// for(let i = 0; i<track_list.length; i++){
+//   insert += `<div class="song-List" id="${i}">${track_list[i].name}</div>`;
+// }
+// // console.log(typeof(insert));
+// songs_area.innerText = insert;
+// let mySongs_first = document.querySelectorAll(".song-List");
+// for(let i of mySongs_first){
+//   i.addEventListener("click", function(e) {
+//     loadTrack(this.id);
+//     playTrack();
+// })
+// }
+// })
 
 function random_bg_color() {
 
@@ -355,7 +369,16 @@ function seekUpdate() {
   }
 }
 
+// let PlayList_songs=document.querySelectorAll(".song-List");
 
+// for(let i of PlayList_songs) {
+//   i.addEventListener("click", function(e) {
+//       //filter = e.currentTarget.id;
+//       // console.log(this.id);
+//       loadTrack(this.id);
+//       playTrack();
+//   })
+// }
 
 
 let open = document.querySelector(".open");
